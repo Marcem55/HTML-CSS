@@ -1,0 +1,75 @@
+body {
+    background-color: #48e;
+    margin: 0;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.box {
+    width: 100%;
+    height: 100px;
+    margin: 20px;
+    margin: 0;
+    background-color: #000;
+    background-image: url("../../Clases HTML/imagenes/yo.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background: url("../../Clases HTML/imagenes/yo.jpg") top / cover fixed #000;
+}
+
+.opaco {
+    height: 100%;
+    width: 100%;
+    background-color: #000a;
+}
+
+h2 {
+    padding: 20px;
+    text-align: center;
+}
+
+.gradient {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to left, transparent, #0005);
+}
+
+.gradient2 {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(green, #000a);
+}
+
+.shadow {
+    width: 300px;
+    background: #e2e2e2;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 0px 0px 40px 0 #0007;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.subtitulo {
+    color: #24a;
+    padding: 0;
+}
+
+.texto {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #48e;
+    text-shadow: 0 0 4px #24a;
+}
+
+img {
+    width: 160px;
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 20px 0 #0007; */
+    filter: drop-shadow(0px 0px 3px #000);
+}
