@@ -1,21 +1,14 @@
-body {
-    margin: 0;
+div {
+    background-color: rebeccapurple;
+    width: 150px;
+    margin: auto;
+    text-align: center;
 }
 
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    margin: 10px;
-}
-
-.box-default {
-    padding: 25px;
-    border: 10px solid black;
-}
-
-.box-new {
-    box-sizing: border-box;
-    padding: 25px;
-    border: 10px solid black;
+div {
+    /* border-width: 2px;
+    border-color: black;
+    border-style: solid; */
+    border: 2px solid black;
+    border-radius: 20px 0; /* los valores del border-radius si son 2, el 1ero afecta arriba izq/abajo der y el 2do abajo izq/arriba der. Si son 4, como las agujas del reloj */
 }
