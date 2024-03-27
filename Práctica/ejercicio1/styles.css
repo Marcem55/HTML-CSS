@@ -1,35 +1,60 @@
 body {
-    background-color: black;
+    background-color: #fff;
     font-family: sans-serif;
     color: white;
 }
 
 .card {
-    background-color: coral;
+    background-color: #6ac;
     text-align: center;
-    width: 400px;
+    width: 300px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 50px;
+    padding: 10px;
+    box-shadow: 0px 0px 35px #0006;
+    border-radius: 12px;
+}
+
+.yellow-card {
+    background-color: #fe5;
+    color: #000;
+}
+
+.green-card {
+    background-color: #287;
+}
+
+.red-card {
+    background-color: #d32;
 }
 
 h1, h2 {
     text-transform: uppercase;
 }
 
-h1 {
+.card-title {
     padding-top: 10px;
     margin: 0;
+    font-size: 24px;
 }
 
-h2 {
+.card-subtitle {
     font-size: 14px;
     font-weight: 100;
     letter-spacing: 2px;
+    margin: 0;
+    margin-top: 5px;
 }
 
-p {
-    font-size: 9px;
-    padding: 20px;
-    background-color: lightcoral;
+.card-content {
+    font-size: 10px;
+    padding: 10px 20px;
+    margin-bottom: 0;
     text-align: justify;
+    border-radius: 12px;
+}
+
+.card-img {
+    width: 100px;
+    border-radius: 50%;
 }
