@@ -1,0 +1,14 @@
+div {
+    background-color: rebeccapurple;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+div {
+    /* border-width: 2px;
+    border-color: black;
+    border-style: solid; */
+    border: 2px solid black;
+    border-radius: 20px 0; /* los valores del border-radius si son 2, el 1ero afecta arriba izq/abajo der y el 2do abajo izq/arriba der. Si son 4, como las agujas del reloj */
+}
