@@ -9,40 +9,49 @@
 <body>
     <form>
       <h2>Formulario de contacto</h2>
-      <div class="form-input">
-        <label for="nombre">Nombre completo</label>
-        <input type="text" placeholder="John Doe" id="nombre" />
-      </div>
-      <div class="form-input">
-        <label for="email">Email</label>
-        <input type="email" placeholder="ejemplo@gmail.completo" id="email" />
-      </div>
+      <fieldset>
+        <legend>Información personal</legend>
+        <div class="form-input">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" placeholder="John Doe" id="nombre" />
+        </div>
+        <div class="form-input">
+          <label for="email">Email</label>
+          <input type="email" placeholder="ejemplo@gmail.completo" id="email" />
+        </div>
+      </fieldset>
       <!-- SELECT Y OPTION -->
-      <div class="form-input">
-        <label for="user">Tipo de usuario</label>
-        <select name="type-of-user" id="user">
+      <fieldset>
+        <legend>¿Cómo llegaste hasta acá?</legend>
+        <div class="form-input">
+          <label for="user">Tipo de usuario</label>
+          <select name="type-of-user" id="user">
             <option value="user1">Seguidor/a</option>
             <option value="user2">Empresa</option>
             <option value="user3">Otros</option>
-        </select>
-      </div>
+          </select>
+        </div>
       <!-- DATALIST Y OPTION -->
       <div class="form-input">
         <label for="referente-input">Referente</label>
         <input list="referente" id="referente-input">
         <datalist id="referente" name="type-of-user">
-            <option value="Marcelo Malacalza">Corredor aficionado</option>
-            <option value="Una empresa">En la expoagro</option>
-            <option value="Un familiar o amigo">Mientras tomaban mates</option>
+          <option value="Marcelo Malacalza">Corredor aficionado</option>
+          <option value="Una empresa">En la expoagro</option>
+          <option value="Un familiar o amigo">Mientras tomaban mates</option>
         </datalist>
       </div>
+    </fieldset>
       <!-- TEXTAREA --> 
-      <div class="form-input">
-        <label
+      <fieldset>
+      <legend>Contanos sobre vos</legend>  
+        <div class="form-input">
+          <label
           >Mensaje
           <textarea placeholder="Escribí tu mensaje" rows="8"></textarea>
         </label>
       </div>
+    </fieldset>
       <div class="form-input">
         <label
           >Acepto los términos y condiciones
