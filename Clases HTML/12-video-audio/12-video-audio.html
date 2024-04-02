@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video - Audio</title>
+</head>
+<body>
+    <h1>Video</h1>
+    <video controls muted autoplay loop src="./video.mp4" poster="../imagenes/yo.jpg">
+        <track src="video.mp4">
+    </video> <!-- SI NO TIENE EL MUTED, POR MÁS QUE TENGA EL AUTOPLAY, NO SE VA A REPRODUCIR AUTOMATICAMENTE --------- PARA PONER UNA MINIATURA SE USA EL ATRIBUTO POSTER Y SE LE PASA UNA IMAGEN. ESTA SE VE EN CASO DE QUE NO CARGUE EL VIDEO -->
+    <audio src="./video.mp4" controls></audio> <!-- TIENE LOS MISMOS ATRIBUTOS QUE VIDEO, PERO NO ES CONVENIENTE USAR VIDEOS PARA ESCUCHAR EL AUDIO, MEJOR USAR ARCHIVOS EN FORMATO DE AUDIO JUSTAMENTE -->
+</body>
+</html>
