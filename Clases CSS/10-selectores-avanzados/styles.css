@@ -22,3 +22,12 @@ h1 + p { /* se aplica el estilo al elemento HERMANO o ADYACENTE al primer select
 h1 ~ p {
     color: blue;
 }
+
+/*
+--------------------- ESPECIFICIDAD -----------------------
+Los selectores puros (h1, div, p, a), tienen el menor de nivel de especificidad (0, 0, 1).
+Los selectores de clase (.container, .title), tienen el segundo nivel de especificidad, es decir, sus estilos se van a aplicar por sobre los selectores puros sin importar el orden (0, 1, 0).
+Los selectores por ID (#card, #list-item), tienen el mayor de nivel de especificidad, y son los que se van a aplicar por encima de cualquiera de los 2 anteriores (1, 0, 0).
+Por otro lado, tenemos los estilos en línea (style="......."), los cuales tienen una especificidad aún mayor que los selectores anteriores.
+Y por último, lo que mayor especificidad tiene es la palabra !important luego de algún estilo declarado. Ningún estilo puede pisar esta declaración.
+*/
