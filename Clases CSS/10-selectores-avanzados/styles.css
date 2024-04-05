@@ -1,0 +1,24 @@
+/* SELECTOR DE ATRIBUTO */
+img[src$="jpg"] { /* los corchetes para los atributos, el $ para que coincida el final, el ^ para que coincida el inicio, ninguno para el valor exacto */
+    width: 100%;
+}
+
+/* SELECCIÓN DESCENDIENTE */
+ul li {
+    color: #666;
+}
+
+/* SELECTOR POR HIJO DIRECTO */
+li > em { /* de esta forma el selector tiene que ser si o si HIJO DIRECTO del selector padre en este caso el UL, sin el ">" puede ser de cualquier nivel mientras esté dentro del ul */
+    color: red;
+}
+
+/* SELECTOR DE HERMANO ADYACENTE */
+h1 + p { /* se aplica el estilo al elemento HERMANO o ADYACENTE al primer selector mencionado */
+    color: blue;
+}
+
+/* SELECTOR DE HERMANOS GENERALES */
+h1 ~ p {
+    color: blue;
+}
