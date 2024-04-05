@@ -1,7 +1,7 @@
 body {
     margin: 0;
     margin-top: 50px;
-    font-family: sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #ddd;
     background-color: #222;
 }
@@ -38,12 +38,12 @@ input, textarea {
     box-shadow: 0px 0px 15px #0003;
     background-color: transparent;
     color: #ddd;
+    font-family: inherit;
 }
 
 textarea {
     min-width: 100%;
     resize: none;
-    font-family: sans-serif;
     /* form-sizing: content ------ FUNCIONALIDAD NO IMPLEMENTADA TODAVÍA ---- */
 }
 
