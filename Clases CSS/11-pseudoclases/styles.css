@@ -1,0 +1,106 @@
+body {
+    background-color: #000;
+}
+
+h1 {
+    color: #48e;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 30px;
+}
+
+/* MOUSE ENCIMA */
+h1:hover {
+    color: aliceblue;
+    background-color: #444;
+}
+
+/* CLICK */
+h1:active {
+    color: #d56;
+    background-color: #48e;
+}
+
+li {
+    color: #aaa;
+}
+
+/* PRIMER ELEMENTO */
+li:first-child {
+    color: #d56;
+}
+
+/* SELECCIONANDO UN ELEMENTO */
+li:nth-child(2) {
+    color: #ff0;
+}
+
+li:nth-child(4) {
+    color: #0f0;
+}
+
+/* SALTEANDO Y EXCLUYENDO ELEMENTOS */
+li:nth-child(3n):not(.excluir) {
+    color: red;
+}
+
+/* ULTIMO ELEMENTO */
+li:last-child {
+    color: #48e;
+}
+
+/* ELEMENTOS VACÍOS */
+div:empty {
+    background-color: aquamarine;
+    padding: 30px;
+}
+
+div {
+    color: #aaa;
+}
+
+/* ELEMENTO INPUT CHECKED */
+input[type="checkbox"]:checked {
+    margin: 20px;
+}
+
+/* ENLACES NO VISITADOS */
+a:link {
+    color: red;
+}
+
+/* ENLACES VISITADOS */
+a:visited {
+    color: #0f0;
+}
+
+/* INPUT VALIDO */
+input:valid {
+    color: #0f0;
+}
+
+/* INPUT INVALIDO 👨‍🦽 */
+input:invalid {
+    color: #d56;
+}
+
+/* IS y WHERE -----> Ambos agrupan elementos, solo que IS tiene más especificidad (la misa que la primer opción de selectores) */
+body .elemento1,
+body .elemento2,
+body .elemento3 {
+    color: violet;
+}
+
+body :is(.elemento1, .elemento2, .elemento3) {
+    color: rgb(219, 30, 219);
+}
+
+body :where(.elemento1, .elemento2, .elemento3) {
+    color: cyan;
+}
+
+/* HAS -----> Si el elemento tiene algun otro tag con la condición (ya sea clase, id u otro tag), se aplica el estilo */
+
+body:has(.elemento1) {
+    background-color: antiquewhite;
+    font-family: sans-serif;
+}
