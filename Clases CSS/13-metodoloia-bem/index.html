@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Metodologíoa BEM</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Metodología BEM</h1>
+    <p style="border-bottom: 2px solid #000; text-align: center;">Bloques, Elementos y Modificadores</p>
+    <p>La clase del bloque debe representar lo que es el bloque en si. Por ejemplo "list", "card", "table", etc.</p>
+    <p>La clase del elemento debe llamarse por el nombre del <strong>BLOQUE</strong> seguido de 2 guiones bajos y el nombre del elemento. Por ejemplo "list__item", "card__button", "table__row", etc.</p>
+    <p>La clase modificadora, debe tener el nombre del <strong>ELEMENTO</strong> seguido por 2 guiones medios y el modificador en cuestión. Por ejemplo "item--danino", "button--primary", "row--invalid", etc.</p>
+    <h2>INGREDIENTES</h2>
+    <ul class="lista">
+        <li class="lista__item item--danino">Sal</li>
+        <li class="lista__item">Papa</li>
+        <li class="lista__item item--importante">Harina</li>
+        <li class="lista__item">Agua</li>
+    </ul>
+    <ul class="lista lista--vieja">
+        <li class="lista__item item--danino">Sal</li>
+        <li class="lista__item">Papa</li>
+        <li class="lista__item item--importante">Harina</li>
+        <li class="lista__item">Agua</li>
+    </ul>
+    <ul class="lista">
+        <li class="lista__item item--danino">Sal</li>
+        <li class="lista__item">Papa</li>
+        <li class="lista__item item--importante">Harina</li>
+        <li class="lista__item">Agua</li>
+    </ul>
+</body>
+</html>
