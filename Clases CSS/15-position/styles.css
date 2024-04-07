@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    background-color: #ccc;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+/* POSITION RELATIVE */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    color: #fff;
+    position: relative;
+}
+
+.box--blue {
+    background-color: blue;
+    top: 40px;
+    left: 30px;
+    z-index: 10;
+}
+
+.box--red {
+    background-color: red;
+    top: 80px;
+    left: 60px;
+    z-index: 20;
+}
+
+/* POSITION ABSOLUTE */
+
+.contenedor {
+    border: 2px solid black;
+    margin: 30px 50px;
+    background-color: #fff;
+    position: relative; /* El position relative en el padre del elemento con position absolute, hace que lo tome como referencia. En caso de no tenerlo toma como referencia la etiqueta <html> */
+    height: 500px;
+}
+
+.box2 {
+    width: 100px;
+    height: 100px;
+    background-color: #ca6;
+    color: #fff;
+}
+
+.box2--blue {
+    background-color: #37d;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+}
+
+.box2--red {
+    background-color: #e53;
+}
