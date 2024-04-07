@@ -1,8 +1,7 @@
 body {
     margin: 0;
-    background-color: #ccc;
+    background-color: #ddd;
     font-family: sans-serif;
-    text-align: center;
 }
 
 /* POSITION RELATIVE */
@@ -34,6 +33,7 @@ body {
 .contenedor {
     border: 2px solid black;
     margin: 30px 50px;
+    margin-bottom: 100px;
     background-color: #fff;
     position: relative; /* El position relative en el padre del elemento con position absolute, hace que lo tome como referencia. En caso de no tenerlo toma como referencia la etiqueta <html> */
     height: 500px;
@@ -58,4 +58,39 @@ body {
 
 .box2--red {
     background-color: #e53;
+}
+
+/* MODAL CON POSITION ABSOLUTE */
+
+.modal {
+    position: absolute;
+    background-color: #0009;
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal__content {
+    background-color: #fff;
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    border-radius: 6px;
+}
+
+.modal__title {
+    margin-top: 10px;
+}
+
+.modal__close-button {
+    background-color: #000;
+    color: #fff;
+    padding: 4px 10px;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
 }

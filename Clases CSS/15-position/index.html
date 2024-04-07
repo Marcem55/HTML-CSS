@@ -1,23 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Position</title>
-</head>
-<body>
-    <section style="border-bottom: 2px solid black; margin-bottom: 50px;">
-        Position relative
-        <div class="box box--red">CAJA</div>
-        <div class="box box--blue">CAJA 2</div>
-        <div class="box">CAJA 3</div>
+  </head>
+  <body>
+    <section style="border-bottom: 2px solid black; margin-bottom: 50px">
+      Position relative
+      <div class="box box--red">CAJA</div>
+      <div class="box box--blue">CAJA 2</div>
+      <div class="box">CAJA 3</div>
     </section>
     Position absolute
     <section class="contenedor">
-        <div class="box2 box2--red">CAJA</div>
-        <div class="box2 box2--blue">CAJA 2</div>
-        <div class="box2">CAJA 3</div>
+      <div class="box2 box2--red">CAJA</div>
+      <div class="box2 box2--blue">CAJA 2</div>
+      <div class="box2">CAJA 3</div>
     </section>
-</body>
+    <div class="modal">
+      <div class="modal__content">
+        <h2 class="modal__title">Ventana modal</h2>
+        <p class="modal__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
+          reiciendis! Nesciunt officiis necessitatibus voluptates consequatur
+          vel in enim provident? Rem quos, beatae nulla dolor tempora ex sit!
+          Ea, quis iusto.
+        </p>
+        <span class="modal__close-button">X</span>
+      </div>
+    </div>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi expedita
+    ducimus, aperiam incidunt recusandae suscipit deleniti quia quas temporibus
+    maiores quasi cum inventore, iste nihil commodi beatae exercitationem
+    mollitia quisquam! Cupiditate vel labore esse unde ab ad ipsa eos sunt hic
+    voluptatum delectus amet distinctio, ut blanditiis. Id natus sequi aliquid
+    eum nesciunt pariatur ratione necessitatibus. Iure ipsum alias aspernatur!
+    Incidunt quae recusandae pariatur. Quisquam corporis cumque ad quam
+    doloribus, ab dolore ipsa consequuntur maiores aspernatur repellat officiis
+    neque amet quo ratione, sunt, iste laborum obcaecati velit exercitationem.
+    Itaque, harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Vero debitis quos corporis commodi eum sequi minus, voluptatum perspiciatis,
+    esse dignissimos iusto, optio magni aliquam porro labore! Inventore harum
+    consectetur recusandae? Dignissimos nam quis similique assumenda natus ab
+    iusto, in dicta pariatur saepe dolorum iste nemo omnis. Nihil, magnam. Sed
+    rerum omnis iure maiores harum dicta quisquam reiciendis beatae quidem
+    blanditiis! Quaerat sequi ducimus possimus voluptates dolorum magnam
+    perspiciatis nostrum ipsa dolor quas, sunt odio minus eligendi maiores nemo
+    maxime non et corrupti magni voluptate architecto illo? Possimus amet quasi
+    tempora! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi
+    illum fugiat numquam et tenetur, in quidem. Ratione iure ex voluptates
+    consequatur beatae sed porro modi explicabo! Quam autem neque illo.
+    Mollitia, cupiditate aliquid sint a amet illum pariatur hic. Sequi maxime
+    assumenda inventore voluptatibus sunt, praesentium repudiandae, corrupti
+    saepe repellendus voluptatum sed. Dolorum illo eos ad enim quis, numquam
+    commodi. Ex est ratione atque earum, soluta modi! Deserunt unde autem vitae,
+    ratione minus temporibus adipisci non corporis dolores aliquid vero possimus
+    officiis, esse hic, magnam omnis ipsa. Delectus, deserunt ea! Nostrum
+    blanditiis sed facilis neque harum autem repellat ex id, cumque tenetur
+    voluptates accusantium est quisquam! Aliquam numquam error sint illo tempora
+    esse dolor dicta tempore distinctio nihil, dolores possimus. Veritatis
+    dolorem asperiores quod ut est at? Earum commodi dolor tempore quia error
+    recusandae repellendus iste beatae aut consequatur quibusdam optio, enim
+    iusto quos laborum omnis aliquam, sunt vitae accusamus. Quos rerum ipsa
+    praesentium beatae expedita tempore placeat! In provident fugiat odio,
+    deserunt unde sit pariatur architecto, delectus amet modi fuga minus itaque,
+    suscipit omnis laboriosam? Odit sint maxime temporibus!
+    <script>
+      document
+        .querySelector(".modal__close-button")
+        .addEventListener("click", () => {
+          document.querySelector(".modal").style.display = "none";
+        });
+    </script>
+  </body>
 </html>
