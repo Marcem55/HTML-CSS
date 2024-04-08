@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #48e;
+}
+
+/* HEADER SECTION */
+
+.header {
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-image: url("../../Clases HTML/imagenes/download.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.header__overlay {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0009;
+  position: absolute;
+  z-index: 1;
+}
+
+.header__item-container {
+  position: relative;
+  z-index: 10;
+  margin: auto;
+  text-align: center;
+  max-width: 700px;
+}
+
+.header__item-container p {
+  text-wrap: pretty;
+}
+
+.header__img {
+  min-width: 250px;
+  max-width: 40%;
+  border-radius: 50%;
+  border: 6px solid #48e;
+  margin: 40px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.6rem;
+  text-wrap: balance;
+}
+
+.scroll {
+  margin-top: 60px;
+  transform: rotate(90deg);
+}
+
+/* NAVBAR SECTION */
+
+.nav {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 6px 20px;
+  position: sticky;
+  top: 0;
+  margin-bottom: 20px;
+  box-shadow: 0 0 25px #0006;
+}
+
+.nav__ul {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__logo-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav__ul-container {
+  flex-grow: 4;
+  text-align: center;
+}
+
+.nav__link {
+  color: #48e;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  margin: 8px;
+  transition: background-color 0.3s, border 0.3s, border-radius 0.3s;
+}
+
+.nav__link:hover {
+  background-color: rgba(124, 172, 243, 0.336);
+  border: 1px solid #48e;
+  border-radius: 20px;
+}
+
+.nav__logo {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.link--login {
+  background-color: #48e;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 30px;
+}
+
+.link--login:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(33, 70, 126);
+}
+
+/* MAIN SECTION */
+
+main {
+  max-width: 800px;
+  margin: auto;
+  text-wrap: pretty;
+}
