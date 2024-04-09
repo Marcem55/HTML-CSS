@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>SRCSET y SIZES</title>
+</head>
+<body>
+    <h1>SRCSET y SIZES</h1>
+    <p>Para mejorar el rendimiento y la carga de la web, es preferible tener diferentes resoluciones para la misma imagen, de manera que el navegador cargue de forma más eficiente la imagen y no tenga que buscar imagenes de resoluciones por ejemplo de 900px cuando el tamaño del viewport del dispositivo es de 400px.</p>
+    <p>A su vez, podemos definir "media querys" con el atributo "sizes", los cuales le dicen al navegador que imagen cargar dependiendo del tamaño de la pantalla.</p>
+    <p>La forma de definir esto, es con el atributo "srcset" y "sizes" dentro del elemento HTML img de la siguiente manera:
+        <code>
+            -img- srcset="mi-imagen-400px.png 400w, mi-imagen-600px.png 600w, mi-imagen-1000px 1000w" sizes="(max-width: 700px) 600px, 900px" -img-
+        </code>
+    </p>
+
+    <img src="../imagenes/yo-900px.jpg" srcset="../imagenes/yo-300px.jpg, 400w ../imagenes/yo-600px.jpg 600w, ../imagenes/yo-900px.jpg 1000w" sizes="(max-width: 700px) 600px, 900px">
+</body>
+</html>
