@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Picture - Source - Media</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <p>
+      Se abre la etiqueta <code>-picture-</code> y dentro se definen los
+      <code>-source-</code> con las imágenes deseadas de la siguiente manera:
+    </p>
+    <p>
+      <code> -source srcset="image-webp" type="image/webp"- </code>
+    </p>
+    <p>
+      <code>
+        -source media="(max-width: 400px)" srcset="image-small.png"-
+      </code>
+    </p>
+    <p>
+      <code>
+        -source media="(max-width: 600px)" srcset="image-medium.png"-
+      </code>
+    </p>
+
+    <p>
+      <code>
+        -img src="image.png" alt="definiendo imagenes para tamaños de pantalla"-
+      </code>
+    </p>
+    <p>
+      De esa manera se definen en prioridad, primero el formato webp (formato
+      más eficiente para navegadores con Chromium) y luego las distintas
+      resoluciones en base a el tamaño de la pantalla.
+    </p>
+    <picture>
+      <source srcset="image-webp" type="image/webp" />
+      <source media="(max-width: 400px)" srcset="image-small.png" />
+      <source media="(max-width: 600px)" srcset="image-medium.png" />
+      <img src="image.png" alt="definiendo imagenes para tamaños de pantalla" />
+    </picture>
+
+    <p>Esto es correcto aplicarlo cuando necesitamos cargar una imagen muy grande, de manera que podemos definir distintos tamaños para distintas pantallas.</p>
+  </body>
 </html>
