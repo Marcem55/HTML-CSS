@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  background-color: #222;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn {
+  padding: 10px 40px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 6px;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+/* ----------- WAVE BUTTON -------------- */
+
+.btn-1 {
+  border: 1px solid #48e;
+  overflow: hidden;
+}
+
+.btn-1::before {
+  content: "";
+  background-color: #48e;
+  display: block;
+  height: 200%;
+  width: 140%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 100%;
+  left: 30%;
+  transition: top 0.6s, left 0.6s;
+}
+
+.btn-1:hover::before {
+  top: -35%;
+  left: -20%;
+}
+
+/* ------------- NEON BUTTON --------------- */
+
+.button-container:has(.btn-2) {
+  filter: drop-shadow(0px 0px 15px #48e);
+}
+
+.btn-2 {
+  border: 1px solid #fff3;
+  color: #fff3;
+}
+
+.btn-2:hover {
+  animation: parpadear 1s infinite alternate backwards;
+}
+
+.btn-2::before {
+  content: "";
+  background-color: #48e;
+  display: block;
+  height: 1px;
+  width: 70%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: -26px;
+  opacity: 0;
+  z-index: -1;
+  transition: top 0.6s;
+}
+
+.btn-2:hover::before {
+    opacity: 1;
+    top: -6px;
+}
+
+@keyframes parpadear {
+  0% {
+    color: #fff3;
+    border: 1px solid #fff3;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  12% {
+    color: #fff3;
+    border: 1px solid #fff3;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  25% {
+    border-color: #48e;
+    color: rgb(111, 168, 255);
+    box-shadow: 0px 0px 6px #48e3, 0px 0px 16px #48e5;
+    text-shadow: 0px 0px 9px #48e3, 0px 0px 3px rgba(159, 197, 255, 0.454);
+  }
+  40% {
+    border: 1px solid #fff3;
+    color: #fff3;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  62% {
+    border-color: #48e;
+    color: rgb(111, 168, 255);
+    box-shadow: 0px 0px 6px #48e3, 0px 0px 16px #48e5;
+    text-shadow: 0px 0px 9px #48e3, 0px 0px 3px rgba(159, 197, 255, 0.454);
+  }
+  80% {
+    border: 1px solid #fff3;
+    color: #fff3;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  100% {
+    border-color: #48e;
+    color: rgb(111, 168, 255);
+    box-shadow: 0px 0px 6px #48e3, 0px 0px 16px #48e5;
+    text-shadow: 0px 0px 9px #48e3, 0px 0px 3px rgba(159, 197, 255, 0.454);
+  }
+}
