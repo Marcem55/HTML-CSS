@@ -48,6 +48,11 @@ body, div {
     grid-column: span 3;
 }
 
+/* -------------------GRID-AREA----------------- */ 
+.grid-item:nth-child(11) {
+    grid-area: span 2 / span 3;
+}
+
 /* -----------------GRID COLUMN Y GRID ROW-------------- */
 .grid-item:first-child {
     grid-column: 1 / 1;
