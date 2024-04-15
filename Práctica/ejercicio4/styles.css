@@ -75,7 +75,7 @@ label {
 
 .header__logo {
   max-width: 100%;
-  width: 64px;
+  width: 72px;
   margin: 10px 20px;
 }
 
@@ -188,22 +188,72 @@ h1 {
   background-color: #463f3a;
   border-radius: 4px;
   padding: 4px 6px;
+  transition: width 1s;
+}
+
+@keyframes llenar50 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+@keyframes llenar60 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@keyframes llenar70 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes llenar80 {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 80%;
+  }
 }
 
 .bar--50 {
   width: 50%;
+  animation: llenar50 2s -.5s ease-in-out backwards;
 }
 
 .bar--60 {
   width: 60%;
+  animation: llenar60 2s -.5s ease-in-out forwards;
 }
 
 .bar--70 {
   width: 70%;
+  animation: llenar70 2s -.5s ease-in-out forwards;
 }
 
 .bar--80 {
   width: 80%;
+  animation: llenar80 2s -.5s ease-in-out forwards;
+}
+
+/* ------------------ ESTO ES PARA LOS USUARIOS QUE TIENEN DESACTIVADAS LAS ANIMACIONES O TRANSICIONES EN EL NAVEGADOR */
+
+@media (prefers-reduced-motion: reduce) {
+    .bar--50, .bar--60, .bar--70, .bar--80 {
+        transition: none;
+        animation: none;
+    }
 }
 
 /* ------------ PROFILE QUERIES -------------- */
