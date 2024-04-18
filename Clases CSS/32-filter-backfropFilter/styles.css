@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+}
+
+.box {
+    background-color: ;
+    margin: auto;
+    padding: 20px 50px;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    margin: auto;
+    /* filter: drop-shadow(0px 0px 15px #000) */ /* ---> SOMBRA */
+    /* filter: blur(5px); */ /* ---> DESENFOQUE */
+    /* filter: brightness(2); */ /* --> BRILLO */
+    /* filter: contrast(2); */ /* ---> CONTRASTE */
+    /* filter: grayscale(0.6); */ /* ---> ESCALA DE GRISES */
+    /* filter: hue-rotate(240deg);  */ /* ---> ROTACIÓN EN LA MATRIZ DE COLORES */
+    /* backdrop-filter: blur(10px); */ /* ---> BACKDROP FILTER SE APLICA A LOS ELEMENTOS QUE ESTÉN DEBAJO DEL ELEMENTO AL QUE LE SETEAMOS EL BACKDROP */
+    /* filter: invert(1); */ /* ---> INVIERTE LOS COLORES */
+    /* filter: sepia(1); */ /* ---> FILTRO SEPIA */
+}
