@@ -6,13 +6,15 @@ body {
 }
 
 .box {
-    background-color: ;
+    background-color: transparent;
     margin: auto;
     padding: 20px 50px;
     position: absolute;
     top: 100px;
     left: 50px;
     margin: auto;
+
+    /* ------------- FILTER & BACKDROP FILTER ---------------- */
     /* filter: drop-shadow(0px 0px 15px #000) */ /* ---> SOMBRA */
     /* filter: blur(5px); */ /* ---> DESENFOQUE */
     /* filter: brightness(2); */ /* --> BRILLO */
@@ -22,4 +24,10 @@ body {
     /* backdrop-filter: blur(10px); */ /* ---> BACKDROP FILTER SE APLICA A LOS ELEMENTOS QUE ESTÉN DEBAJO DEL ELEMENTO AL QUE LE SETEAMOS EL BACKDROP */
     /* filter: invert(1); */ /* ---> INVIERTE LOS COLORES */
     /* filter: sepia(1); */ /* ---> FILTRO SEPIA */
+
+    /* ------------- TRANSFORM ----------------- */
+    transform: scaleX(1.3) scaleY(3); /* --->  ESCALA EL TAMAÑO */
+    transform: skew(20deg); /* ---> MUEVE LOS ANGULOS */
+    transform: rotate(45deg); /* ---> ROTACIÓN PROPIAMENTE DICHA */
+    translate: 200px 500px; /* ---> TRASLADA EL ELEMENTO */
 }
