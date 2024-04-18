@@ -143,10 +143,33 @@
           </label>
         </div>
         <div class="form__input-container">
-          <input type="submit" value="Enviar"/>
+          <input type="submit" value="Enviar" />
         </div>
       </form>
     </section>
     <footer>Marcelo Malacalza - Copyright</footer>
+
+    <script>
+      const checkbox = document.querySelector(".header__checkbox");
+
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          // Si el checkbox está marcado, deshabilita el scroll
+          document.body.style.overflow = "hidden";
+        } else {
+          // Si el checkbox no está marcado, habilita el desplazamiento
+          document.body.style.overflow = "auto";
+        }
+      });
+
+      const links = document.querySelectorAll(".header__nav-link");
+      console.log(links)
+      links.forEach(link => link.addEventListener("click", () => {
+        if(checkbox.checked) {
+          document.body.style.overflow = "auto"
+          checkbox.checked = false
+        }
+      }))
+    </script>
   </body>
 </html>
