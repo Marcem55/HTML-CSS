@@ -1,9 +1,26 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    height: 100vh;
-    display: flex;
 }
 
 .box {
+    background-color: #48e;
+    display: grid;
+    place-content: center;
+    color: #fff;
+    font-size: 30px;
+    margin: 120px auto;
+    padding: 0 40px;
+    /* MIN Y MAX ---> Obtenemos un valor entre 2, ya sea el máximo o el mínimo dependiendo la pantalla o el espacio q tenga el elemento al q le damos el width */
+    width: min(900px, 100%);
+    width: max(900px, 100%);
+    
+    /* CLAMP ---> Le decimos, en el caso de abajo, que va a medir 100% en el caso que sea mayor a 800px y menor a 1400px, es como setear un min-width, width y max-width */
+    width: clamp(800px, 100%, 1400px);
+    font-size: clamp(2.4rem, 2vw, 5rem);
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 0;
 }
