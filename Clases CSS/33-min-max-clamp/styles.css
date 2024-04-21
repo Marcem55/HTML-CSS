@@ -1,30 +1,41 @@
+
 * {
     box-sizing: border-box;
+}
+
+:root {
+    /* VARIABLES ---> Nos permiten tener valores generales para toda la página */
+    --color-principal: #f44;
+    --box-height: 300px
 }
 
 body {
     margin: 0;
     font-family: sans-serif;
-    padding: 20px;
-    --color-principal: #f44;
 }
 
 .box {
     background-color: var(--color-principal);
-    display: grid;
-    place-content: center;
     color: #fff;
     font-size: 30px;
-    margin: 120px auto;
     padding: 0 40px;
     border: 6px solid #000;
     /* MIN Y MAX ---> Obtenemos un valor entre 2, ya sea el máximo o el mínimo dependiendo la pantalla o el espacio q tenga el elemento al q le damos el width */
-    width: min(900px, 100%);
-    width: max(900px, 100%);
+    /* width: min(900px, 100%);
+    width: max(900px, 100%); */
 
     /* CLAMP ---> Le decimos, en el caso de abajo, que va a medir 100% en el caso que sea mayor a 800px y menor a 1400px, es como setear un min-width, width y max-width */
-    width: clamp(800px, 100%, 1400px);
+    /* width: clamp(800px, 100%, 1400px); */
     font-size: clamp(2.4rem, 2vw, 5rem);
+}
+
+.box:first-child {
+    height: var(--box-height);
+}
+
+.box:nth-child(2){
+    height: calc(100vh - var(--box-height));
+    overflow: auto;
 }
 
 h1 {
