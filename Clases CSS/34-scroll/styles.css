@@ -1,0 +1,23 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.box {
+    border: 6px solid #000;
+    width: 50vw;
+    height: 100vh;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scrollbar-color: #444 #fff;
+    scrollbar-width: thin;
+}
+
+.crecer {
+    height: 200vh;
+}
