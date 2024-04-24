@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+div,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --bg-color: color-mix(in srgb, #48e 50%, #fff);
+  --text-color: #282828;
+  --dark-color: #48e;
+  --faq-color: #fff;
+  background-color: var(--bg-color);
+  font-family: montserrat;
+}
+
+.faq {
+    max-width: clamp(300px, 100%, 900px);
+    margin: auto;
+}
+
+.faq__ask {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+.faq__option {
+    background-color: var(--faq-color);
+    margin: 7px;
+    padding: 7px;
+    display: block;
+    max-height: 34px;
+    transition: max-height .3s;
+}
+
+.faq__option:has(input[type="checkbox"]:checked) {
+    max-height: 200px;
+    transition: max-height 1s;
+}
+
+.content {
+    padding: 5px 10px;
+    border-top: 1px solid var(--bg-color);
+    padding-top: 5px;
+    margin: 10px;
+    margin-bottom: 0;
+    font-size: .8rem;
+    opacity: 0;
+}
+
+.faq__option:has(input[type="checkbox"]:checked) .content {
+    animation: aparecer 1s both;
+}
+
+.faq__ask::marker {
+    content: '';
+}
+
+.faq__ask::before {
+    content: "+";
+    color: var(--bg-color);
+    position: absolute;
+    right: 0;
+    font-weight: 700;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.faq__option:has(input[type="checkbox"]:checked) .faq__ask::marker {
+    content: ""
+}
+
+.faq__option:has(input[type="checkbox"]:checked) .faq__ask::before {
+    content: "-";
+    color: var(--bg-color);
+    position: absolute;
+    right: 0;
+    font-weight: 700;
+}
+
+.faq__option b {
+    background-color: var(--dark-color);
+    padding: 2px 4px;
+    color: var(--faq-color);
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        translate: 0 -20px;
+        border-top: 1px solid transparent;
+    }
+
+    50% {
+        border-top: 1px solid transparent;
+    }
+
+    to {
+        opacity: 1;
+        translate: 0 0;
+        border-top: 1px solid var(--bg-color);
+    }
+}
